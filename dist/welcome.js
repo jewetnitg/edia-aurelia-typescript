@@ -1,4 +1,13 @@
-define(["require", "exports"], function (require, exports) {
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+define(["require", "exports", 'aurelia-framework'], function (require, exports, aurelia_framework_1) {
     "use strict";
     var Welcome = (function () {
         function Welcome() {
@@ -23,6 +32,10 @@ define(["require", "exports"], function (require, exports) {
                 return confirm('Are you sure you want to leave?');
             }
         };
+        __decorate([
+            aurelia_framework_1.computedFrom('firstName', 'lastName'), 
+            __metadata('design:type', Object)
+        ], Welcome.prototype, "fullName", null);
         return Welcome;
     }());
     exports.Welcome = Welcome;
@@ -37,4 +50,4 @@ define(["require", "exports"], function (require, exports) {
     exports.UpperValueConverter = UpperValueConverter;
 });
 //# sourceMappingURL=welcome.js.map
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoid2VsY29tZS5qcyIsInNvdXJjZVJvb3QiOiIvc3JjIiwic291cmNlcyI6WyJ3ZWxjb21lLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0lBRUE7UUFBQTtZQUNFLFlBQU8sR0FBRyx3Q0FBd0MsQ0FBQztZQUNuRCxjQUFTLEdBQUcsTUFBTSxDQUFDO1lBQ25CLGFBQVEsR0FBRyxLQUFLLENBQUM7WUFDakIsa0JBQWEsR0FBRyxJQUFJLENBQUMsUUFBUSxDQUFDO1FBcUJoQyxDQUFDO1FBZEMsc0JBQUksNkJBQVE7aUJBQVo7Z0JBQ0UsTUFBTSxDQUFJLElBQUksQ0FBQyxTQUFTLFNBQUksSUFBSSxDQUFDLFFBQVUsQ0FBQztZQUM5QyxDQUFDOzs7V0FBQTtRQUVELHdCQUFNLEdBQU47WUFDRSxJQUFJLENBQUMsYUFBYSxHQUFHLElBQUksQ0FBQyxRQUFRLENBQUM7WUFDbkMsS0FBSyxDQUFDLGNBQVksSUFBSSxDQUFDLFFBQVEsTUFBRyxDQUFDLENBQUM7UUFDdEMsQ0FBQztRQUVELCtCQUFhLEdBQWI7WUFDRSxFQUFFLENBQUMsQ0FBQyxJQUFJLENBQUMsUUFBUSxLQUFLLElBQUksQ0FBQyxhQUFhLENBQUMsQ0FBQyxDQUFDO2dCQUN6QyxNQUFNLENBQUMsT0FBTyxDQUFDLGlDQUFpQyxDQUFDLENBQUM7WUFDcEQsQ0FBQztRQUNILENBQUM7UUFDSCxjQUFDO0lBQUQsQ0FBQyxBQXpCRCxJQXlCQztJQXpCWSxlQUFPLFVBeUJuQixDQUFBO0lBRUQ7UUFBQTtRQUlBLENBQUM7UUFIQyxvQ0FBTSxHQUFOLFVBQU8sS0FBSztZQUNWLE1BQU0sQ0FBQyxLQUFLLElBQUksS0FBSyxDQUFDLFdBQVcsRUFBRSxDQUFDO1FBQ3RDLENBQUM7UUFDSCwwQkFBQztJQUFELENBQUMsQUFKRCxJQUlDO0lBSlksMkJBQW1CLHNCQUkvQixDQUFBIn0=
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoid2VsY29tZS5qcyIsInNvdXJjZVJvb3QiOiIvc3JjIiwic291cmNlcyI6WyJ3ZWxjb21lLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7O0lBRUE7UUFBQTtZQUNFLFlBQU8sR0FBRyx3Q0FBd0MsQ0FBQztZQUNuRCxjQUFTLEdBQUcsTUFBTSxDQUFDO1lBQ25CLGFBQVEsR0FBRyxLQUFLLENBQUM7WUFDakIsa0JBQWEsR0FBRyxJQUFJLENBQUMsUUFBUSxDQUFDO1FBc0JoQyxDQUFDO1FBZkMsc0JBQUksNkJBQVE7aUJBQVo7Z0JBQ0UsTUFBTSxDQUFJLElBQUksQ0FBQyxTQUFTLFNBQUksSUFBSSxDQUFDLFFBQVUsQ0FBQztZQUM5QyxDQUFDOzs7V0FBQTtRQUVELHdCQUFNLEdBQU47WUFDRSxJQUFJLENBQUMsYUFBYSxHQUFHLElBQUksQ0FBQyxRQUFRLENBQUM7WUFFbkMsS0FBSyxDQUFDLGNBQVksSUFBSSxDQUFDLFFBQVEsTUFBRyxDQUFDLENBQUM7UUFDdEMsQ0FBQztRQUVELCtCQUFhLEdBQWI7WUFDRSxFQUFFLENBQUMsQ0FBQyxJQUFJLENBQUMsUUFBUSxLQUFLLElBQUksQ0FBQyxhQUFhLENBQUMsQ0FBQyxDQUFDO2dCQUN6QyxNQUFNLENBQUMsT0FBTyxDQUFDLGlDQUFpQyxDQUFDLENBQUM7WUFDcEQsQ0FBQztRQUNILENBQUM7UUFmRDtZQUFDLGdDQUFZLENBQUMsV0FBVyxFQUFFLFVBQVUsQ0FBQzs7K0NBQUE7UUFnQnhDLGNBQUM7SUFBRCxDQUFDLEFBMUJELElBMEJDO0lBMUJZLGVBQU8sVUEwQm5CLENBQUE7SUFFRDtRQUFBO1FBSUEsQ0FBQztRQUhDLG9DQUFNLEdBQU4sVUFBTyxLQUFLO1lBQ1YsTUFBTSxDQUFDLEtBQUssSUFBSSxLQUFLLENBQUMsV0FBVyxFQUFFLENBQUM7UUFDdEMsQ0FBQztRQUNILDBCQUFDO0lBQUQsQ0FBQyxBQUpELElBSUM7SUFKWSwyQkFBbUIsc0JBSS9CLENBQUEifQ==

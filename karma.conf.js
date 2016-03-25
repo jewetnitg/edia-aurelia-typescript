@@ -2,6 +2,7 @@ module.exports = function(config) {
   config.set({
     basePath: './',
     frameworks: ['systemjs', 'jasmine'],
+
     systemjs: {
       configFile: 'config.js',
       config: {
@@ -31,6 +32,16 @@ module.exports = function(config) {
     files: [
       'test/unit/setup.ts',
       'test/unit/*.ts'
+    ],
+    plugins: [
+      // preprocessors
+      'karma-systemjs',
+      'karma-jasmine',
+
+      // launchers
+      'karma-phantomjs-launcher',
+      'karma-chrome-launcher',
+      'karma-firefox-launcher'
     ],
     exclude: [],
     preprocessors: { },

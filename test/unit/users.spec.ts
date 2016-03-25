@@ -1,6 +1,3 @@
-///<reference path="../../typings/main.d.ts"/>
-import {Promise} from 'es6-promise';
-
 import {Users} from 'src/users';
 import {HttpClient} from 'aurelia-fetch-client';
 

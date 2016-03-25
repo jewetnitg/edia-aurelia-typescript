@@ -1,11 +1,11 @@
-define(["require", "exports", 'es6-promise', 'src/users'], function (require, exports, es6_promise_1, users_1) {
+define(["require", "exports", 'src/users'], function (require, exports, users_1) {
     "use strict";
     var HttpStub = (function () {
         function HttpStub() {
         }
         HttpStub.prototype.fetch = function (url) {
             var _this = this;
-            return new es6_promise_1.Promise(function (resolve) {
+            return new Promise(function (resolve) {
                 resolve({ json: function () { return _this.items; } });
             });
         };

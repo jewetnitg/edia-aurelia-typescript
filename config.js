@@ -25,8 +25,15 @@ System.config({
     "bootstrap": "github:twbs/bootstrap@3.3.6",
     "fetch": "github:github/fetch@0.11.0",
     "font-awesome": "npm:font-awesome@4.5.0",
+    "genadis/aurelia-mdl": "github:genadis/aurelia-mdl@0.1.2",
+    "genadis/encapsulated-mdl": "github:genadis/encapsulated-mdl@1.1.1",
     "lodash": "npm:lodash@4.6.1",
+    "material-design-lite": "github:google/material-design-lite@1.1.3",
+    "redpelicans/aurelia-material": "github:redpelicans/aurelia-material@master",
     "text": "github:systemjs/plugin-text@0.0.3",
+    "github:genadis/aurelia-mdl@0.1.2": {
+      "encapsulated-mdl": "github:genadis/encapsulated-mdl@2.1.1"
+    },
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.3.0"
     },
@@ -38,6 +45,11 @@ System.config({
     },
     "github:jspm/nodelibs-util@0.1.0": {
       "util": "npm:util@0.10.3"
+    },
+    "github:redpelicans/aurelia-material@master": {
+      "google/material-design-lite": "github:google/material-design-lite@1.1.3",
+      "jquery": "github:components/jquery@2.2.1",
+      "lodash": "npm:lodash@3.10.1"
     },
     "github:twbs/bootstrap@3.3.6": {
       "jquery": "github:components/jquery@2.2.1"
@@ -182,6 +194,9 @@ System.config({
     },
     "npm:inherits@2.0.1": {
       "util": "github:jspm/nodelibs-util@0.1.0"
+    },
+    "npm:lodash@3.10.1": {
+      "process": "github:jspm/nodelibs-process@0.1.2"
     },
     "npm:lodash@4.6.1": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",

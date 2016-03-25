@@ -1,4 +1,4 @@
-//import {computedFrom} from 'aurelia-framework';
+import {computedFrom} from 'aurelia-framework';
 
 export class Welcome {
   heading = 'Welcome to the Aurelia Navigation App!';
@@ -10,13 +10,14 @@ export class Welcome {
   //However, if you tell Aurelia the dependencies, it no longer needs to dirty check the property.
   //To optimize by declaring the properties that this getter is computed from, uncomment the line below
   //as well as the corresponding import above.
-  //@computedFrom('firstName', 'lastName')
+  @computedFrom('firstName', 'lastName')
   get fullName() {
     return `${this.firstName} ${this.lastName}`;
   }
 
   submit() {
     this.previousValue = this.fullName;
+
     alert(`Welcome, ${this.fullName}!`);
   }
 
